@@ -1,0 +1,352 @@
+[gd_scene format=3 uid="uid://daa0j3qhaijnr"]
+
+[ext_resource type="Script" uid="uid://bsrpodde241ec" path="res://ruleta.gd" id="1_juvvu"]
+[ext_resource type="Texture2D" uid="uid://c8q5nj5fxxn6y" path="res://Ref/Gemini_Generated_Image_82t4ix82t4ix82t4.png" id="2_8vngh"]
+[ext_resource type="Texture2D" uid="uid://xsewjvkxoey2" path="res://Ref/BolaReBonita.png" id="3_xo31r"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_juvvu"]
+radius = 42.793106
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_juvvu"]
+size = Vector2(50.678528, 195.38951)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8vngh"]
+size = Vector2(50.678528, 195.38951)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xo31r"]
+size = Vector2(50.678528, 195.38951)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c2yqw"]
+size = Vector2(50.678528, 195.38951)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vc8ed"]
+size = Vector2(50.678528, 195.38951)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o504i"]
+size = Vector2(50.678528, 195.38951)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ffrnl"]
+size = Vector2(50.678528, 195.38951)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0odjh"]
+size = Vector2(50.678528, 195.38951)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x425r"]
+size = Vector2(50.678528, 195.38951)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_of2wr"]
+size = Vector2(43.71972, 154.50536)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f0igt"]
+size = Vector2(50.678528, 195.38951)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y3kk1"]
+size = Vector2(50.678528, 195.38951)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3u0hf"]
+size = Vector2(50.678528, 195.38951)
+
+[node name="Ruleta" type="Node2D" unique_id=996173267]
+position = Vector2(573, 324)
+script = ExtResource("1_juvvu")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1881922448]
+scale = Vector2(0.749674, 0.9133522)
+texture = ExtResource("2_8vngh")
+
+[node name="Button" type="Button" parent="." unique_id=691487233]
+offset_left = -535.0
+offset_top = -178.0
+offset_right = -432.0
+offset_bottom = -108.0
+text = "JUGAR"
+metadata/_edit_use_anchors_ = true
+
+[node name="LineEdit" type="LineEdit" parent="." unique_id=2135711056]
+offset_left = -557.0
+offset_top = -219.0
+offset_right = -488.5
+offset_bottom = -188.0
+placeholder_text = "Escribe un numero"
+alignment = 1
+expand_to_text_length = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="." unique_id=2090511123]
+offset_left = -564.0
+offset_top = -319.0
+offset_right = -423.0
+offset_bottom = -234.0
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="OrbitadorBola" type="Node2D" parent="." unique_id=1214262034]
+
+[node name="SpriteBola" type="Sprite2D" parent="OrbitadorBola" unique_id=1289676871]
+position = Vector2(0, -270)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("3_xo31r")
+
+[node name="DetectorBola" type="Area2D" parent="OrbitadorBola/SpriteBola" unique_id=616242409]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="OrbitadorBola/SpriteBola/DetectorBola" unique_id=966885385]
+shape = SubResource("CircleShape2D_juvvu")
+
+[node name="ContenedorNumeros" type="Node2D" parent="." unique_id=1344165820]
+
+[node name="Area_0" type="Area2D" parent="ContenedorNumeros" unique_id=1162360716 groups=["sensores_ruleta"]]
+metadata/numero_ruleta = "0"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_0" unique_id=1332693155]
+position = Vector2(-2, -269.5)
+shape = SubResource("RectangleShape2D_juvvu")
+
+[node name="Area_1" type="Area2D" parent="ContenedorNumeros" unique_id=756233051 groups=["sensores_ruleta"]]
+metadata/numero_ruleta = "1"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_1" unique_id=698406838]
+position = Vector2(-62, -265)
+rotation = 2.9992645
+shape = SubResource("RectangleShape2D_8vngh")
+
+[node name="Area_2" type="Area2D" parent="ContenedorNumeros" unique_id=1595324321 groups=["sensores_ruleta"]]
+metadata/numero_ruleta = "2"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_2" unique_id=428031561]
+position = Vector2(58, -264)
+rotation = 0.10449755
+shape = SubResource("RectangleShape2D_xo31r")
+
+[node name="Area_5" type="Area2D" parent="ContenedorNumeros" unique_id=2098098268 groups=["sensores_ruleta"]]
+metadata/numero_ruleta = "5"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_5" unique_id=757817822]
+position = Vector2(173, -232)
+rotation = 0.53926885
+shape = SubResource("RectangleShape2D_c2yqw")
+
+[node name="Area_29" type="Area2D" parent="ContenedorNumeros" unique_id=495749591 groups=["sensores_ruleta"]]
+metadata/numero_ruleta = "29"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_29" unique_id=1791381004]
+position = Vector2(306, -117)
+rotation = 1.1353744
+shape = SubResource("RectangleShape2D_vc8ed")
+
+[node name="Area_13" type="Area2D" parent="ContenedorNumeros" unique_id=1405761188 groups=["sensores_ruleta"]]
+metadata/numero_ruleta = "13"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_13" unique_id=500507044]
+position = Vector2(-122, -252)
+rotation = 2.788848
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("RectangleShape2D_o504i")
+
+[node name="Area_36" type="Area2D" parent="ContenedorNumeros" unique_id=866291139 groups=["sensores_ruleta"]]
+metadata/numero_ruleta = "36"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_36" unique_id=858324704]
+position = Vector2(-177, -232.00006)
+rotation = 2.6076603
+shape = SubResource("RectangleShape2D_ffrnl")
+
+[node name="Area_17" type="Area2D" parent="ContenedorNumeros" unique_id=280708620 groups=["sensores_ruleta"]]
+metadata/numero_ruleta = "17"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_17" unique_id=380260907]
+position = Vector2(-225, -185)
+rotation = 2.462863
+shape = SubResource("RectangleShape2D_0odjh")
+
+[node name="Area_32" type="Area2D" parent="ContenedorNumeros" unique_id=2036909913 groups=["sensores_ruleta"]]
+metadata/numero_ruleta = "32"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_32" unique_id=873783803]
+position = Vector2(-272, -141)
+rotation = 2.2286496
+shape = SubResource("RectangleShape2D_x425r")
+
+[node name="Area_26" type="Area2D" parent="ContenedorNumeros" unique_id=1683003307 groups=["sensores_ruleta"]]
+metadata/numero_ruleta = "26"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_26" unique_id=352638882]
+position = Vector2(-292.55048, -88.16264)
+rotation = 1.9397259
+shape = SubResource("RectangleShape2D_of2wr")
+
+[node name="Area_8" type="Area2D" parent="ContenedorNumeros" unique_id=2068368855 groups=["sensores_ruleta"]]
+metadata/numero_ruleta = "8"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_8" unique_id=275615468]
+position = Vector2(-315, -43)
+rotation = 1.6221461
+shape = SubResource("RectangleShape2D_of2wr")
+
+[node name="Area_33" type="Area2D" parent="ContenedorNumeros" unique_id=2139491129 groups=["sensores_ruleta"]]
+metadata/numero_ruleta = "33"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_33" unique_id=199208228]
+position = Vector2(-325, 12)
+rotation = 1.3741472
+shape = SubResource("RectangleShape2D_of2wr")
+
+[node name="Area_16" type="Area2D" parent="ContenedorNumeros" unique_id=2112315874 groups=["sensores_ruleta"]]
+metadata/numero_ruleta = "16"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_16" unique_id=1661321626]
+position = Vector2(-308, 60)
+rotation = 1.2647895
+shape = SubResource("RectangleShape2D_of2wr")
+
+[node name="Area_23" type="Area2D" parent="ContenedorNumeros" unique_id=1967542210 groups=["sensores_ruleta"]]
+rotation = -0.19455339
+metadata/numero_ruleta = "23"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_23" unique_id=1961517243]
+position = Vector2(-308, 60)
+rotation = 1.2647895
+shape = SubResource("RectangleShape2D_of2wr")
+
+[node name="Area_9" type="Area2D" parent="ContenedorNumeros" unique_id=381966334 groups=["sensores_ruleta"]]
+rotation = -0.3972565
+metadata/numero_ruleta = "9"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_9" unique_id=1349665517]
+position = Vector2(-294.75522, 56.350407)
+rotation = 1.2647895
+shape = SubResource("RectangleShape2D_of2wr")
+
+[node name="Area_24_2" type="Area2D" parent="ContenedorNumeros" unique_id=682415705 groups=["sensores_ruleta"]]
+rotation = -0.625242
+metadata/numero_ruleta = "24"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_24_2" unique_id=1230115265]
+position = Vector2(-277.059, 54.067593)
+rotation = 1.2647895
+shape = SubResource("RectangleShape2D_of2wr")
+
+[node name="Area_23_2" type="Area2D" parent="ContenedorNumeros" unique_id=969969237 groups=["sensores_ruleta"]]
+rotation = -0.86487025
+metadata/numero_ruleta = "23"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_23_2" unique_id=1150656510]
+position = Vector2(-260.7784, 50.166264)
+rotation = 1.2647895
+shape = SubResource("RectangleShape2D_of2wr")
+
+[node name="Area_10_2" type="Area2D" parent="ContenedorNumeros" unique_id=506521763 groups=["sensores_ruleta"]]
+rotation = -1.115231
+metadata/numero_ruleta = "10"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_10_2" unique_id=290969318]
+position = Vector2(-248.59305, 47.185856)
+rotation = 1.2647895
+shape = SubResource("RectangleShape2D_of2wr")
+
+[node name="Area_0_2" type="Area2D" parent="ContenedorNumeros" unique_id=1345796391 groups=["sensores_ruleta"]]
+rotation = -1.4019697
+metadata/numero_ruleta = "0"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_0_2" unique_id=826511652]
+position = Vector2(-241.68478, 40.180557)
+rotation = 1.3912522
+shape = SubResource("RectangleShape2D_of2wr")
+
+[node name="Area_0_3" type="Area2D" parent="ContenedorNumeros" unique_id=986599043 groups=["sensores_ruleta"]]
+rotation = -1.6901344
+metadata/numero_ruleta = "0"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_0_3" unique_id=159812219]
+position = Vector2(-241.68478, 40.180557)
+rotation = 1.3912522
+shape = SubResource("RectangleShape2D_of2wr")
+
+[node name="Area_38" type="Area2D" parent="ContenedorNumeros" unique_id=1809870041 groups=["sensores_ruleta"]]
+rotation = -1.9776165
+metadata/numero_ruleta = "38"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_38" unique_id=1037421628]
+position = Vector2(-249.30278, 42.85039)
+rotation = 1.3912522
+shape = SubResource("RectangleShape2D_of2wr")
+
+[node name="Area_18" type="Area2D" parent="ContenedorNumeros" unique_id=962304983 groups=["sensores_ruleta"]]
+rotation = -2.230894
+metadata/numero_ruleta = "18"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_18" unique_id=247329446]
+position = Vector2(-263.77698, 44.628563)
+rotation = 1.5481002
+shape = SubResource("RectangleShape2D_of2wr")
+
+[node name="Area_18_2" type="Area2D" parent="ContenedorNumeros" unique_id=1919029892 groups=["sensores_ruleta"]]
+rotation = -2.472156
+metadata/numero_ruleta = "18"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_18_2" unique_id=1663907371]
+position = Vector2(-282.91904, 45.35208)
+rotation = 1.5481002
+shape = SubResource("RectangleShape2D_of2wr")
+
+[node name="Area_12" type="Area2D" parent="ContenedorNumeros" unique_id=1681114131 groups=["sensores_ruleta"]]
+rotation = -2.65804
+metadata/numero_ruleta = "12"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_12" unique_id=784267887]
+position = Vector2(-282.91904, 45.35208)
+rotation = 1.5481002
+shape = SubResource("RectangleShape2D_of2wr")
+
+[node name="Area_8_2" type="Area2D" parent="ContenedorNumeros" unique_id=1111096435 groups=["sensores_ruleta"]]
+rotation = -2.845939
+metadata/numero_ruleta = "8"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_8_2" unique_id=327681257]
+position = Vector2(-282.91904, 45.35208)
+rotation = 1.5481002
+shape = SubResource("RectangleShape2D_of2wr")
+
+[node name="Area_2_2" type="Area2D" parent="ContenedorNumeros" unique_id=121934384 groups=["sensores_ruleta"]]
+rotation = -3.014808
+metadata/numero_ruleta = "2"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_2_2" unique_id=1232932379]
+position = Vector2(-282.91904, 45.35208)
+rotation = 1.5481002
+shape = SubResource("RectangleShape2D_of2wr")
+
+[node name="Area_11" type="Area2D" parent="ContenedorNumeros" unique_id=156438342 groups=["sensores_ruleta"]]
+rotation = -3.1813378
+metadata/numero_ruleta = "11"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_11" unique_id=590013172]
+position = Vector2(-282.91904, 45.35208)
+rotation = 1.5481002
+shape = SubResource("RectangleShape2D_of2wr")
+
+[node name="Area_5_2" type="Area2D" parent="ContenedorNumeros" unique_id=1062313180 groups=["sensores_ruleta"]]
+metadata/numero_ruleta = "5"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_5_2" unique_id=169817482]
+position = Vector2(269, -166)
+rotation = 0.9194766
+shape = SubResource("RectangleShape2D_f0igt")
+
+[node name="Area_22" type="Area2D" parent="ContenedorNumeros" unique_id=1265031661 groups=["sensores_ruleta"]]
+metadata/numero_ruleta = "22"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_22" unique_id=365307000]
+position = Vector2(223, -200)
+rotation = 0.76470464
+shape = SubResource("RectangleShape2D_y3kk1")
+
+[node name="Area_14" type="Area2D" parent="ContenedorNumeros" unique_id=924229664 groups=["sensores_ruleta"]]
+metadata/numero_ruleta = "14"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_14" unique_id=1092183343]
+position = Vector2(117.39728, -251.22589)
+rotation = 0.35854948
+shape = SubResource("RectangleShape2D_3u0hf")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
