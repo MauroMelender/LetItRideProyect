@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bvvgx6ybgul1s"]
+
+[ext_resource type="Script" uid="uid://caxgi765bib82" path="res://intro.gd" id="1_ayt76"]
+[ext_resource type="Texture2D" uid="uid://yvccawrjdd2v" path="res://Ref/Introfondo.jpg" id="2_7a8ye"]
+
+[node name="Intro" type="Control" unique_id=418629115]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_ayt76")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=707205057]
+layout_mode = 0
+offset_right = 1153.0
+offset_bottom = 647.0
+texture = ExtResource("2_7a8ye")
+expand_mode = 1
+
+[node name="Timer" type="Timer" parent="." unique_id=1855606625]
+wait_time = 3.0
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

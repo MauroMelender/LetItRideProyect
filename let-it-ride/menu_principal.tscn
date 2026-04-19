@@ -1,0 +1,141 @@
+[gd_scene format=3 uid="uid://4pqtsgb6sxdr"]
+
+[ext_resource type="Script" uid="uid://dssba28u5pi4t" path="res://menu_principal.gd" id="1_ns3he"]
+[ext_resource type="Texture2D" uid="uid://dnt1ikgv1t0wp" path="res://Ref/FondodeMenu.jpg" id="2_fa1tu"]
+[ext_resource type="Texture2D" uid="uid://dqjwul3agqyn4" path="res://Ref/Spr_NewRunButton.png" id="3_a6518"]
+[ext_resource type="Texture2D" uid="uid://c8e1xdkb8lg" path="res://Ref/Spr_LetItRide!Logo.png" id="3_fa1tu"]
+[ext_resource type="Texture2D" uid="uid://lb78h0injfac" path="res://Ref/Spr_ExitButton.png" id="4_yxm4i"]
+
+[sub_resource type="Animation" id="Animation_a6518"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BotonSalir:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(464, 700)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BotonJugar:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(464, 700)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TextureRect2:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(531, -63)]
+}
+
+[sub_resource type="Animation" id="Animation_fa1tu"]
+resource_name = "intro_menu"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BotonSalir:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(464, 700), Vector2(464, 228)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BotonJugar:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(464, 700), Vector2(464, 148)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TextureRect2:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1150, -63), Vector2(531, -63)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_a6518"]
+_data = {
+&"RESET": SubResource("Animation_a6518"),
+&"intro_menu": SubResource("Animation_fa1tu")
+}
+
+[node name="MenuPrincipal" type="Control" unique_id=521109575]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_ns3he")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=689619736]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 646.0
+texture = ExtResource("2_fa1tu")
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=764959087]
+layout_mode = 0
+offset_left = 531.0
+offset_top = -63.0
+offset_right = 907.00024
+offset_bottom = 259.0
+texture = ExtResource("3_fa1tu")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="BotonSalir" type="TextureButton" parent="." unique_id=1961131517]
+layout_mode = 0
+offset_left = 464.0
+offset_top = 700.0
+offset_right = 744.0
+offset_bottom = 779.9992
+texture_normal = ExtResource("4_yxm4i")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="BotonJugar" type="TextureButton" parent="." unique_id=444693850]
+layout_mode = 0
+offset_left = 464.0
+offset_top = 700.0
+offset_right = 814.0
+offset_bottom = 779.9999
+texture_normal = ExtResource("3_a6518")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=968755346]
+libraries/ = SubResource("AnimationLibrary_a6518")
+
+[connection signal="pressed" from="BotonSalir" to="." method="_on_boton_salir_pressed"]
+[connection signal="pressed" from="BotonJugar" to="." method="_on_boton_jugar_pressed"]

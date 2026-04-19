@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Let It Ride"
-run/main_scene="uid://daa0j3qhaijnr"
+run/main_scene="uid://bvvgx6ybgul1s"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
