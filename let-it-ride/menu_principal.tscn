@@ -4,14 +4,17 @@
 [ext_resource type="Texture2D" uid="uid://dnt1ikgv1t0wp" path="res://Ref/FondodeMenu.jpg" id="2_fa1tu"]
 [ext_resource type="Texture2D" uid="uid://dqjwul3agqyn4" path="res://Ref/Spr_NewRunButton.png" id="3_a6518"]
 [ext_resource type="Texture2D" uid="uid://c8e1xdkb8lg" path="res://Ref/Spr_LetItRide!Logo.png" id="3_fa1tu"]
+[ext_resource type="Texture2D" uid="uid://bb0b1mm6r3fh5" path="res://Ref/Spr_ContinueButton.png" id="4_b574n"]
 [ext_resource type="Texture2D" uid="uid://lb78h0injfac" path="res://Ref/Spr_ExitButton.png" id="4_yxm4i"]
+[ext_resource type="Texture2D" uid="uid://d1lbj1im4brs1" path="res://Ref/Spr_ConfigButton.png" id="6_611wp"]
+[ext_resource type="Texture2D" uid="uid://cqeks7wt4idmr" path="res://Ref/Spr_CollectionButton.png" id="7_xpioy"]
 
 [sub_resource type="Animation" id="Animation_a6518"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("BotonSalir:position")
+tracks/0/path = NodePath("Boton_Salir:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -23,7 +26,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("BotonJugar:position")
+tracks/1/path = NodePath("Boton_NuevaRun:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -35,7 +38,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("TextureRect2:position")
+tracks/2/path = NodePath("TitleLetItRide:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -44,44 +47,117 @@ tracks/2/keys = {
 "update": 0,
 "values": [Vector2(531, -63)]
 }
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Boton_Continuar:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Boton_Configuracion:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1, -197)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Boton_Coleccion:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-6, -168)]
+}
 
 [sub_resource type="Animation" id="Animation_fa1tu"]
 resource_name = "intro_menu"
+length = 1.41
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("BotonSalir:position")
+tracks/0/path = NodePath("Boton_Salir:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 0.7, 1, 1.1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(464, 700), Vector2(464, 228)]
+"values": [Vector2(-424.05, 494.66), Vector2(-424.05, 494.66), Vector2(204.63, 494.66), Vector2(145.11499, 494.66)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("BotonJugar:position")
+tracks/1/path = NodePath("Boton_NuevaRun:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 0.6333333, 1, 1.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(464, 700), Vector2(464, 148)]
+"values": [Vector2(-456.265, 329.21), Vector2(-456.265, 329.21), Vector2(219.61, 329.21), Vector2(129.805, 329.21)]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("TextureRect2:position")
+tracks/2/path = NodePath("TitleLetItRide:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 0.73333335, 0.8333333, 0.96666664, 1.1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(1150, -63), Vector2(531, -63)]
+"values": [Vector2(-564.808, -63), Vector2(-564.808, -63), Vector2(40.645, -63), Vector2(102.03, -63), Vector2(0, -63)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Boton_Continuar:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.8333333, 1, 1.1666666),
+"transitions": PackedFloat32Array(1.0352646, 1.0352646, 1, 1),
+"update": 0,
+"values": [Vector2(-458.333, 270.45), Vector2(-458.333, 270.45), Vector2(173.175, 270.45), Vector2(127.545, 270.45)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Boton_Configuracion:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.8, 1, 1.1666666),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-471.218, 241.665), Vector2(-471.218, 241.665), Vector2(167.23, 241.665), Vector2(110.975, 241.66498)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Boton_Coleccion:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.8333333, 1, 1.1333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-449.943, 310.39), Vector2(-449.943, 310.39), Vector2(216.725, 310.39), Vector2(131.03, 310.39)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_a6518"]
@@ -104,38 +180,66 @@ offset_bottom = 646.0
 texture = ExtResource("2_fa1tu")
 expand_mode = 1
 
-[node name="TextureRect2" type="TextureRect" parent="." unique_id=764959087]
+[node name="TitleLetItRide" type="TextureRect" parent="." unique_id=764959087]
 layout_mode = 0
 offset_left = 531.0
 offset_top = -63.0
-offset_right = 907.00024
-offset_bottom = 259.0
+offset_right = 1062.1136
+offset_bottom = 381.0
 texture = ExtResource("3_fa1tu")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="BotonSalir" type="TextureButton" parent="." unique_id=1961131517]
+[node name="Boton_Continuar" type="TextureButton" parent="." unique_id=760495432]
 layout_mode = 0
-offset_left = 464.0
-offset_top = 700.0
-offset_right = 744.0
-offset_bottom = 779.9992
-texture_normal = ExtResource("4_yxm4i")
+offset_right = 256.83588
+offset_bottom = 58.704987
+texture_normal = ExtResource("4_b574n")
 ignore_texture_size = true
 stretch_mode = 5
 
-[node name="BotonJugar" type="TextureButton" parent="." unique_id=444693850]
+[node name="Boton_NuevaRun" type="TextureButton" parent="." unique_id=444693850]
 layout_mode = 0
 offset_left = 464.0
 offset_top = 700.0
-offset_right = 814.0
-offset_bottom = 779.9999
+offset_right = 717.99243
+offset_bottom = 758.055
 texture_normal = ExtResource("3_a6518")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Boton_Configuracion" type="TextureButton" parent="." unique_id=616607182]
+layout_mode = 0
+offset_left = -1.0
+offset_top = -197.0
+offset_right = 292.14313
+offset_bottom = 147.58966
+texture_normal = ExtResource("6_611wp")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Boton_Coleccion" type="TextureButton" parent="." unique_id=646413123]
+layout_mode = 0
+offset_left = -6.0
+offset_top = -168.0
+offset_right = 252.15802
+offset_bottom = 151.69275
+texture_normal = ExtResource("7_xpioy")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Boton_Salir" type="TextureButton" parent="." unique_id=1961131517]
+layout_mode = 0
+offset_left = 464.0
+offset_top = 700.0
+offset_right = 671.37067
+offset_bottom = 759.3655
+texture_normal = ExtResource("4_yxm4i")
 ignore_texture_size = true
 stretch_mode = 5
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=968755346]
 libraries/ = SubResource("AnimationLibrary_a6518")
 
-[connection signal="pressed" from="BotonSalir" to="." method="_on_boton_salir_pressed"]
-[connection signal="pressed" from="BotonJugar" to="." method="_on_boton_jugar_pressed"]
+[connection signal="pressed" from="Boton_NuevaRun" to="." method="_on_boton_jugar_pressed"]
+[connection signal="pressed" from="Boton_Salir" to="." method="_on_boton_salir_pressed"]
