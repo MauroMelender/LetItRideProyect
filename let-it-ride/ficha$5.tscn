@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bhxxbhehs2wc8"]
+
+[ext_resource type="Script" uid="uid://bhdivmylxallj" path="res://ficha.gd" id="1_b02wx"]
+[ext_resource type="Texture2D" uid="uid://etwqgxf6hpj0" path="res://Ref/Spr_Chip_5.png" id="2_f4qhv"]
+[ext_resource type="Texture2D" uid="uid://b6dyium60gyoy" path="res://Ref/Spr_Chip_1.png" id="2_kugr6"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cl8c7"]
+
+[node name="Ficha$5" type="Area2D" unique_id=1840554016]
+scale = Vector2(4, 4)
+script = ExtResource("1_b02wx")
+
+[node name="Sombra" type="Sprite2D" parent="." unique_id=2014244825]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(0, 5)
+scale = Vector2(0.037, 0.047)
+texture = ExtResource("2_kugr6")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1276039740]
+scale = Vector2(0.040243972, 0.049865384)
+texture = ExtResource("2_f4qhv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=792426257]
+shape = SubResource("CircleShape2D_cl8c7")
