@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://djewggq4p4vlw"]
+
+[ext_resource type="PackedScene" uid="uid://cevv2md5tcxfs" path="res://ficha$1.tscn" id="1_88f8t"]
+[ext_resource type="PackedScene" uid="uid://bhxxbhehs2wc8" path="res://ficha$5.tscn" id="2_jhvp1"]
+[ext_resource type="PackedScene" uid="uid://c2hrjyvn6wmyg" path="res://ficha$10.tscn" id="3_kywx8"]
+
+[node name="Coins" type="Node2D" unique_id=613590722]
+
+[node name="Ficha$1" parent="." unique_id=1312362115 instance=ExtResource("1_88f8t")]
+
+[node name="Ficha$5" parent="." unique_id=1840554016 instance=ExtResource("2_jhvp1")]
+
+[node name="Ficha$10" parent="." unique_id=2075883354 instance=ExtResource("3_kywx8")]

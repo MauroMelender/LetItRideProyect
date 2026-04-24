@@ -3,6 +3,9 @@
 [ext_resource type="Script" uid="uid://bsrpodde241ec" path="res://ruleta.gd" id="1_juvvu"]
 [ext_resource type="Texture2D" uid="uid://c8q5nj5fxxn6y" path="res://Ref/Gemini_Generated_Image_82t4ix82t4ix82t4.png" id="2_8vngh"]
 [ext_resource type="Texture2D" uid="uid://xsewjvkxoey2" path="res://Ref/BolaReBonita.png" id="3_xo31r"]
+[ext_resource type="PackedScene" uid="uid://cevv2md5tcxfs" path="res://ficha$1.tscn" id="4_8vngh"]
+[ext_resource type="PackedScene" uid="uid://bhxxbhehs2wc8" path="res://ficha$5.tscn" id="5_c2yqw"]
+[ext_resource type="PackedScene" uid="uid://c2hrjyvn6wmyg" path="res://ficha$10.tscn" id="6_vc8ed"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_juvvu"]
 radius = 42.793106
@@ -348,5 +351,14 @@ metadata/numero_ruleta = "14"
 position = Vector2(117.39728, -251.22589)
 rotation = 0.35854948
 shape = SubResource("RectangleShape2D_3u0hf")
+
+[node name="Ficha$1" parent="." unique_id=1312362115 instance=ExtResource("4_8vngh")]
+position = Vector2(-521, 6)
+
+[node name="Ficha$5" parent="." unique_id=1840554016 instance=ExtResource("5_c2yqw")]
+position = Vector2(-521, 104)
+
+[node name="Ficha$10" parent="." unique_id=2075883354 instance=ExtResource("6_vc8ed")]
+position = Vector2(-521, 217)
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
