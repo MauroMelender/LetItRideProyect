@@ -4,9 +4,10 @@
 [ext_resource type="Texture2D" uid="uid://c8e1xdkb8lg" path="res://Ref/Spr_LetItRide!Logo.png" id="2_kfus4"]
 [ext_resource type="Texture2D" uid="uid://bb0b1mm6r3fh5" path="res://Ref/Spr_ContinueButton.png" id="3_afqr1"]
 [ext_resource type="Texture2D" uid="uid://dqjwul3agqyn4" path="res://Ref/Spr_NewRunButton.png" id="4_p2nfu"]
-[ext_resource type="Texture2D" uid="uid://d1lbj1im4brs1" path="res://Ref/Spr_ConfigButton.png" id="5_jtobk"]
-[ext_resource type="Texture2D" uid="uid://cqeks7wt4idmr" path="res://Ref/Spr_CollectionButton.png" id="6_081kg"]
+[ext_resource type="Texture2D" uid="uid://3hn1pbyeh42q" path="res://Ref/Spr_ConfigButton.png" id="5_jtobk"]
+[ext_resource type="Texture2D" uid="uid://b5cu7igj6548u" path="res://Ref/Spr_CollectionButton.png" id="6_081kg"]
 [ext_resource type="Texture2D" uid="uid://lb78h0injfac" path="res://Ref/Spr_ExitButton.png" id="7_83vd4"]
+[ext_resource type="Texture2D" uid="uid://dnt1ikgv1t0wp" path="res://Ref/FondodeMenu.jpg" id="8_kfus4"]
 
 [sub_resource type="Animation" id="Animation_a6518"]
 length = 0.16666667
@@ -144,7 +145,7 @@ tracks/4/keys = {
 "times": PackedFloat32Array(0, 0.8, 1, 1.1666666),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(-471.218, 241.665), Vector2(-471.218, 241.665), Vector2(167.23, 241.665), Vector2(110.975, 241.66498)]
+"values": [Vector2(-471.218, 387), Vector2(-471.218, 387), Vector2(167.23, 387), Vector2(110.975, 387)]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
@@ -156,7 +157,7 @@ tracks/5/keys = {
 "times": PackedFloat32Array(0, 0.8333333, 1, 1.1333333),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(-449.943, 310.39), Vector2(-449.943, 310.39), Vector2(216.725, 310.39), Vector2(131.03, 310.39)]
+"values": [Vector2(-449.943, 445), Vector2(-449.943, 445), Vector2(216.725, 445), Vector2(131.03, 445)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_a6518"]
@@ -171,6 +172,11 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_mvexp")
+
+[node name="FondodeMenu" type="Sprite2D" parent="." unique_id=1245030214]
+position = Vector2(576.25, 327)
+scale = Vector2(0.8389091, 0.84375)
+texture = ExtResource("8_kfus4")
 
 [node name="TitleLetItRide" type="TextureRect" parent="." unique_id=764959087]
 layout_mode = 0
@@ -205,8 +211,8 @@ stretch_mode = 5
 layout_mode = 0
 offset_left = -1.0
 offset_top = -197.0
-offset_right = 292.14313
-offset_bottom = 147.58966
+offset_right = 292.143
+offset_bottom = -138.945
 texture_normal = ExtResource("5_jtobk")
 ignore_texture_size = true
 stretch_mode = 5
@@ -215,8 +221,8 @@ stretch_mode = 5
 layout_mode = 0
 offset_left = -6.0
 offset_top = -168.0
-offset_right = 252.15802
-offset_bottom = 151.69275
+offset_right = 252.15799
+offset_bottom = -109.94501
 texture_normal = ExtResource("6_081kg")
 ignore_texture_size = true
 stretch_mode = 5
