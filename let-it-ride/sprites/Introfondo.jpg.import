@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bb0b1mm6r3fh5"
-path="res://.godot/imported/Spr_ContinueButton.png-04c96f928d06f44786f1b1b0442ca229.ctex"
+uid="uid://yvccawrjdd2v"
+path="res://.godot/imported/Introfondo.jpg-a1964c970d18930e53e7219695274f5a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ref/Spr_ContinueButton.png"
-dest_files=["res://.godot/imported/Spr_ContinueButton.png-04c96f928d06f44786f1b1b0442ca229.ctex"]
+source_file="res://sprites/Introfondo.jpg"
+dest_files=["res://.godot/imported/Introfondo.jpg-a1964c970d18930e53e7219695274f5a.ctex"]
 
 [params]
 

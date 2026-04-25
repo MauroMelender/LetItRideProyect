@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://daa0j3qhaijnr"]
 
 [ext_resource type="Script" uid="uid://bsrpodde241ec" path="res://ruleta.gd" id="1_juvvu"]
-[ext_resource type="Texture2D" uid="uid://c8q5nj5fxxn6y" path="res://Ref/Gemini_Generated_Image_82t4ix82t4ix82t4.png" id="2_8vngh"]
-[ext_resource type="Texture2D" uid="uid://xsewjvkxoey2" path="res://Ref/BolaReBonita.png" id="3_xo31r"]
+[ext_resource type="Texture2D" uid="uid://gwa651s718nb" path="res://sprites/Spr_Ruleta.png" id="2_c2yqw"]
+[ext_resource type="Texture2D" uid="uid://u65ad18lwdsm" path="res://sprites/Ruleta 01.png" id="3_vc8ed"]
+[ext_resource type="Texture2D" uid="uid://xsewjvkxoey2" path="res://sprites/BolaReBonita.png" id="3_xo31r"]
 [ext_resource type="PackedScene" uid="uid://cevv2md5tcxfs" path="res://ficha$1.tscn" id="4_8vngh"]
 [ext_resource type="PackedScene" uid="uid://bhxxbhehs2wc8" path="res://ficha$5.tscn" id="5_c2yqw"]
 [ext_resource type="PackedScene" uid="uid://c2hrjyvn6wmyg" path="res://ficha$10.tscn" id="6_vc8ed"]
@@ -10,52 +11,17 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_juvvu"]
 radius = 42.793106
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_juvvu"]
-size = Vector2(50.678528, 195.38951)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_8vngh"]
-size = Vector2(50.678528, 195.38951)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_xo31r"]
-size = Vector2(50.678528, 195.38951)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_c2yqw"]
-size = Vector2(50.678528, 195.38951)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_vc8ed"]
-size = Vector2(50.678528, 195.38951)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_o504i"]
-size = Vector2(50.678528, 195.38951)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ffrnl"]
-size = Vector2(50.678528, 195.38951)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_0odjh"]
-size = Vector2(50.678528, 195.38951)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_x425r"]
-size = Vector2(50.678528, 195.38951)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_of2wr"]
-size = Vector2(43.71972, 154.50536)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_f0igt"]
-size = Vector2(50.678528, 195.38951)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_y3kk1"]
-size = Vector2(50.678528, 195.38951)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_3u0hf"]
-size = Vector2(50.678528, 195.38951)
-
 [node name="Ruleta" type="Node2D" unique_id=996173267]
 position = Vector2(573, 324)
 script = ExtResource("1_juvvu")
 
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=185581416]
+texture = ExtResource("2_c2yqw")
+
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1881922448]
-scale = Vector2(0.749674, 0.9133522)
-texture = ExtResource("2_8vngh")
+rotation = 3.1415927
+scale = Vector2(0.55, 0.55)
+texture = ExtResource("3_vc8ed")
 
 [node name="Button" type="Button" parent="." unique_id=691487233]
 offset_left = -535.0
@@ -87,8 +53,8 @@ metadata/_edit_use_anchors_ = true
 [node name="OrbitadorBola" type="Node2D" parent="." unique_id=1214262034]
 
 [node name="SpriteBola" type="Sprite2D" parent="OrbitadorBola" unique_id=1289676871]
-position = Vector2(0, -270)
-scale = Vector2(0.4, 0.4)
+position = Vector2(0, -221.37)
+scale = Vector2(0.245, 0.245)
 texture = ExtResource("3_xo31r")
 
 [node name="DetectorBola" type="Area2D" parent="OrbitadorBola/SpriteBola" unique_id=616242409]
@@ -101,256 +67,277 @@ shape = SubResource("CircleShape2D_juvvu")
 [node name="Area_0" type="Area2D" parent="ContenedorNumeros" unique_id=1162360716 groups=["sensores_ruleta"]]
 metadata/numero_ruleta = "0"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_0" unique_id=1332693155]
-position = Vector2(-2, -269.5)
-shape = SubResource("RectangleShape2D_juvvu")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ContenedorNumeros/Area_0" unique_id=961632409]
+polygon = PackedVector2Array(-10, -159, -19, -254, 18, -254, 10, -159)
 
 [node name="Area_1" type="Area2D" parent="ContenedorNumeros" unique_id=756233051 groups=["sensores_ruleta"]]
 metadata/numero_ruleta = "1"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_1" unique_id=698406838]
-position = Vector2(-62, -265)
-rotation = 2.9992645
-shape = SubResource("RectangleShape2D_8vngh")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ContenedorNumeros/Area_1" unique_id=947479821]
+rotation = 3.9095376
+polygon = PackedVector2Array(-10, -159, -19, -254, 18, -254, 10, -159)
 
 [node name="Area_2" type="Area2D" parent="ContenedorNumeros" unique_id=1595324321 groups=["sensores_ruleta"]]
 metadata/numero_ruleta = "2"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_2" unique_id=428031561]
-position = Vector2(58, -264)
-rotation = 0.10449755
-shape = SubResource("RectangleShape2D_xo31r")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ContenedorNumeros/Area_2" unique_id=2099423851]
+rotation = 1.0210177
+polygon = PackedVector2Array(-10, -159, -19, -254, 18, -254, 10, -159)
+
+[node name="Area_3" type="Area2D" parent="ContenedorNumeros" unique_id=1111096435 groups=["sensores_ruleta"]]
+rotation = -2.845939
+metadata/numero_ruleta = "8"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ContenedorNumeros/Area_3" unique_id=992103420]
+rotation = 2.5097835
+polygon = PackedVector2Array(-10, -159, -19, -254, 18, -254, 10, -159)
+
+[node name="Area_4" type="Area2D" parent="ContenedorNumeros" unique_id=682415705 groups=["sensores_ruleta"]]
+rotation = -0.625242
+metadata/numero_ruleta = "24"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ContenedorNumeros/Area_4" unique_id=726806154]
+rotation = 1.3002703
+polygon = PackedVector2Array(-10, -159, -19, -254, 18, -254, 10, -159)
 
 [node name="Area_5" type="Area2D" parent="ContenedorNumeros" unique_id=2098098268 groups=["sensores_ruleta"]]
 metadata/numero_ruleta = "5"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_5" unique_id=757817822]
-position = Vector2(173, -232)
-rotation = 0.53926885
-shape = SubResource("RectangleShape2D_c2yqw")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ContenedorNumeros/Area_5" unique_id=167552431]
+rotation = 3.2288592
+polygon = PackedVector2Array(-10, -159, -19, -254, 18, -254, 10, -159)
 
-[node name="Area_29" type="Area2D" parent="ContenedorNumeros" unique_id=495749591 groups=["sensores_ruleta"]]
-metadata/numero_ruleta = "29"
+[node name="Area_6" type="Area2D" parent="ContenedorNumeros" unique_id=969969237 groups=["sensores_ruleta"]]
+rotation = -0.86487025
+metadata/numero_ruleta = "23"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_29" unique_id=1791381004]
-position = Vector2(306, -117)
-rotation = 1.1353744
-shape = SubResource("RectangleShape2D_vc8ed")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ContenedorNumeros/Area_6" unique_id=249714733]
+rotation = 2.5569074
+polygon = PackedVector2Array(-10, -159, -19, -254, 18, -254, 10, -159)
 
-[node name="Area_13" type="Area2D" parent="ContenedorNumeros" unique_id=1405761188 groups=["sensores_ruleta"]]
-metadata/numero_ruleta = "13"
+[node name="Area_7" type="Area2D" parent="ContenedorNumeros" unique_id=1223866681 groups=["sensores_ruleta"]]
+rotation = -1.7297405
+metadata/numero_ruleta = "23"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_13" unique_id=500507044]
-position = Vector2(-122, -252)
-rotation = 2.788848
-scale = Vector2(0.99999994, 0.99999994)
-shape = SubResource("RectangleShape2D_o504i")
-
-[node name="Area_36" type="Area2D" parent="ContenedorNumeros" unique_id=866291139 groups=["sensores_ruleta"]]
-metadata/numero_ruleta = "36"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_36" unique_id=858324704]
-position = Vector2(-177, -232.00006)
-rotation = 2.6076603
-shape = SubResource("RectangleShape2D_ffrnl")
-
-[node name="Area_17" type="Area2D" parent="ContenedorNumeros" unique_id=280708620 groups=["sensores_ruleta"]]
-metadata/numero_ruleta = "17"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_17" unique_id=380260907]
-position = Vector2(-225, -185)
-rotation = 2.462863
-shape = SubResource("RectangleShape2D_0odjh")
-
-[node name="Area_32" type="Area2D" parent="ContenedorNumeros" unique_id=2036909913 groups=["sensores_ruleta"]]
-metadata/numero_ruleta = "32"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_32" unique_id=873783803]
-position = Vector2(-272, -141)
-rotation = 2.2286496
-shape = SubResource("RectangleShape2D_x425r")
-
-[node name="Area_26" type="Area2D" parent="ContenedorNumeros" unique_id=1683003307 groups=["sensores_ruleta"]]
-metadata/numero_ruleta = "26"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_26" unique_id=352638882]
-position = Vector2(-292.55048, -88.16264)
-rotation = 1.9397259
-shape = SubResource("RectangleShape2D_of2wr")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ContenedorNumeros/Area_7" unique_id=1595127994]
+rotation = 0.715585
+polygon = PackedVector2Array(-10, -159, -19, -254, 18, -254, 10, -159)
 
 [node name="Area_8" type="Area2D" parent="ContenedorNumeros" unique_id=2068368855 groups=["sensores_ruleta"]]
 metadata/numero_ruleta = "8"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_8" unique_id=275615468]
-position = Vector2(-315, -43)
-rotation = 1.6221461
-shape = SubResource("RectangleShape2D_of2wr")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ContenedorNumeros/Area_8" unique_id=1714246731]
+rotation = 2.7139869
+polygon = PackedVector2Array(-10, -159, -19, -254, 18, -254, 10, -159)
 
-[node name="Area_33" type="Area2D" parent="ContenedorNumeros" unique_id=2139491129 groups=["sensores_ruleta"]]
-metadata/numero_ruleta = "33"
+[node name="Area_9" type="Area2D" parent="ContenedorNumeros" unique_id=381966334 groups=["sensores_ruleta"]]
+rotation = -0.3972565
+scale = Vector2(0.99999994, 0.99999994)
+metadata/numero_ruleta = "9"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_33" unique_id=199208228]
-position = Vector2(-325, 12)
-rotation = 1.3741472
-shape = SubResource("RectangleShape2D_of2wr")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ContenedorNumeros/Area_9" unique_id=681794393]
+rotation = 4.9916415
+polygon = PackedVector2Array(-10, -159, -19, -254, 18, -254, 10, -159)
+
+[node name="Area_10" type="Area2D" parent="ContenedorNumeros" unique_id=1954696569 groups=["sensores_ruleta"]]
+rotation = -0.3972565
+scale = Vector2(0.99999994, 0.99999994)
+metadata/numero_ruleta = "9"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ContenedorNumeros/Area_10" unique_id=880620990]
+rotation = 3.455752
+polygon = PackedVector2Array(-10, -159, -19, -254, 18, -254, 10, -159)
+
+[node name="Area_11" type="Area2D" parent="ContenedorNumeros" unique_id=330575871 groups=["sensores_ruleta"]]
+rotation = -0.794513
+scale = Vector2(0.99999976, 0.99999976)
+metadata/numero_ruleta = "9"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ContenedorNumeros/Area_11" unique_id=845733178]
+rotation = 3.1677725
+polygon = PackedVector2Array(-10, -159, -19, -254, 18, -254, 10, -159)
+
+[node name="Area_12" type="Area2D" parent="ContenedorNumeros" unique_id=992915086 groups=["sensores_ruleta"]]
+rotation = -1.589026
+scale = Vector2(0.9999995, 0.9999995)
+metadata/numero_ruleta = "9"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ContenedorNumeros/Area_12" unique_id=1800709540]
+rotation = 0.91629785
+polygon = PackedVector2Array(-10, -159, -19, -254, 18, -254, 10, -159)
+
+[node name="Area_13" type="Area2D" parent="ContenedorNumeros" unique_id=1405761188 groups=["sensores_ruleta"]]
+metadata/numero_ruleta = "13"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ContenedorNumeros/Area_13" unique_id=1280719837]
+rotation = 2.0333085
+polygon = PackedVector2Array(-10, -159, -19, -254, 18, -254, 10, -159)
+
+[node name="Area_14" type="Area2D" parent="ContenedorNumeros" unique_id=90720181 groups=["sensores_ruleta"]]
+metadata/numero_ruleta = "13"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ContenedorNumeros/Area_14" unique_id=1485479927]
+rotation = 4.2586036
+polygon = PackedVector2Array(-10, -159, -19, -254, 18, -254, 10, -159)
+
+[node name="Area_15" type="Area2D" parent="ContenedorNumeros" unique_id=810849749 groups=["sensores_ruleta"]]
+metadata/numero_ruleta = "13"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ContenedorNumeros/Area_15" unique_id=766453775]
+rotation = 6.614798
+polygon = PackedVector2Array(-10, -159, -19, -254, 18, -254, 10, -159)
 
 [node name="Area_16" type="Area2D" parent="ContenedorNumeros" unique_id=2112315874 groups=["sensores_ruleta"]]
 metadata/numero_ruleta = "16"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_16" unique_id=1661321626]
-position = Vector2(-308, 60)
-rotation = 1.2647895
-shape = SubResource("RectangleShape2D_of2wr")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ContenedorNumeros/Area_16" unique_id=775795586]
+rotation = 3.5691984
+polygon = PackedVector2Array(-10, -159, -19, -254, 18, -254, 10, -159)
+
+[node name="Area_17" type="Area2D" parent="ContenedorNumeros" unique_id=280708620 groups=["sensores_ruleta"]]
+metadata/numero_ruleta = "17"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ContenedorNumeros/Area_17" unique_id=201464042]
+rotation = 1.3613569
+polygon = PackedVector2Array(-10, -159, -19, -254, 18, -254, 10, -159)
+
+[node name="Area_18" type="Area2D" parent="ContenedorNumeros" unique_id=124736561 groups=["sensores_ruleta"]]
+metadata/numero_ruleta = "17"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ContenedorNumeros/Area_18" unique_id=1484445088]
+rotation = 4.9305553
+polygon = PackedVector2Array(-10, -159, -19, -254, 18, -254, 10, -159)
+
+[node name="Area_19" type="Area2D" parent="ContenedorNumeros" unique_id=237051931 groups=["sensores_ruleta"]]
+metadata/numero_ruleta = "17"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ContenedorNumeros/Area_19" unique_id=34320246]
+rotation = 0.5061455
+polygon = PackedVector2Array(-10, -159, -19, -254, 18, -254, 10, -159)
+
+[node name="Area_20" type="Area2D" parent="ContenedorNumeros" unique_id=487644568 groups=["sensores_ruleta"]]
+metadata/numero_ruleta = "17"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ContenedorNumeros/Area_20" unique_id=970212743]
+rotation = 4.0840707
+polygon = PackedVector2Array(-10, -159, -19, -254, 18, -254, 10, -159)
+
+[node name="Area_21" type="Area2D" parent="ContenedorNumeros" unique_id=949105654 groups=["sensores_ruleta"]]
+metadata/numero_ruleta = "17"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ContenedorNumeros/Area_21" unique_id=647563070]
+rotation = 0.83775806
+polygon = PackedVector2Array(-10, -159, -19, -254, 18, -254, 10, -159)
+
+[node name="Area_22" type="Area2D" parent="ContenedorNumeros" unique_id=1886121847 groups=["sensores_ruleta"]]
+metadata/numero_ruleta = "17"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ContenedorNumeros/Area_22" unique_id=8315186]
+rotation = 4.756022
+polygon = PackedVector2Array(-10, -159, -19, -254, 18, -254, 10, -159)
 
 [node name="Area_23" type="Area2D" parent="ContenedorNumeros" unique_id=1967542210 groups=["sensores_ruleta"]]
 rotation = -0.19455339
 metadata/numero_ruleta = "23"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_23" unique_id=1961517243]
-position = Vector2(-308, 60)
-rotation = 1.2647895
-shape = SubResource("RectangleShape2D_of2wr")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ContenedorNumeros/Area_23" unique_id=2029814306]
+rotation = 3.0700343
+polygon = PackedVector2Array(-10, -159, -19, -254, 18, -254, 10, -159)
 
-[node name="Area_9" type="Area2D" parent="ContenedorNumeros" unique_id=381966334 groups=["sensores_ruleta"]]
-rotation = -0.3972565
-metadata/numero_ruleta = "9"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_9" unique_id=1349665517]
-position = Vector2(-294.75522, 56.350407)
-rotation = 1.2647895
-shape = SubResource("RectangleShape2D_of2wr")
-
-[node name="Area_24_2" type="Area2D" parent="ContenedorNumeros" unique_id=682415705 groups=["sensores_ruleta"]]
-rotation = -0.625242
-metadata/numero_ruleta = "24"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_24_2" unique_id=1230115265]
-position = Vector2(-277.059, 54.067593)
-rotation = 1.2647895
-shape = SubResource("RectangleShape2D_of2wr")
-
-[node name="Area_23_2" type="Area2D" parent="ContenedorNumeros" unique_id=969969237 groups=["sensores_ruleta"]]
-rotation = -0.86487025
+[node name="Area_24" type="Area2D" parent="ContenedorNumeros" unique_id=2040668891 groups=["sensores_ruleta"]]
+rotation = -0.38910678
+scale = Vector2(0.99999994, 0.99999994)
 metadata/numero_ruleta = "23"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_23_2" unique_id=1150656510]
-position = Vector2(-260.7784, 50.166264)
-rotation = 1.2647895
-shape = SubResource("RectangleShape2D_of2wr")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ContenedorNumeros/Area_24" unique_id=181163375]
+rotation = 3.7873645
+polygon = PackedVector2Array(-10, -159, -19, -254, 18, -254, 10, -159)
 
-[node name="Area_10_2" type="Area2D" parent="ContenedorNumeros" unique_id=506521763 groups=["sensores_ruleta"]]
-rotation = -1.115231
-metadata/numero_ruleta = "10"
+[node name="Area_25" type="Area2D" parent="ContenedorNumeros" unique_id=2116565701 groups=["sensores_ruleta"]]
+rotation = -0.5836601
+metadata/numero_ruleta = "23"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_10_2" unique_id=290969318]
-position = Vector2(-248.59305, 47.185856)
-rotation = 1.2647895
-shape = SubResource("RectangleShape2D_of2wr")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ContenedorNumeros/Area_25" unique_id=1475805295]
+rotation = 1.7715092
+polygon = PackedVector2Array(-10, -159, -19, -254, 18, -254, 10, -159)
 
-[node name="Area_0_2" type="Area2D" parent="ContenedorNumeros" unique_id=1345796391 groups=["sensores_ruleta"]]
-rotation = -1.4019697
-metadata/numero_ruleta = "0"
+[node name="Area_26" type="Area2D" parent="ContenedorNumeros" unique_id=1683003307 groups=["sensores_ruleta"]]
+metadata/numero_ruleta = "26"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_0_2" unique_id=826511652]
-position = Vector2(-241.68478, 40.180557)
-rotation = 1.3912522
-shape = SubResource("RectangleShape2D_of2wr")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ContenedorNumeros/Area_26" unique_id=815058423]
+rotation = 6.1138883
+polygon = PackedVector2Array(-10, -159, -19, -254, 18, -254, 10, -159)
 
-[node name="Area_0_3" type="Area2D" parent="ContenedorNumeros" unique_id=986599043 groups=["sensores_ruleta"]]
-rotation = -1.6901344
-metadata/numero_ruleta = "0"
+[node name="Area_27" type="Area2D" parent="ContenedorNumeros" unique_id=207110119 groups=["sensores_ruleta"]]
+metadata/numero_ruleta = "26"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_0_3" unique_id=159812219]
-position = Vector2(-241.68478, 40.180557)
-rotation = 1.3912522
-shape = SubResource("RectangleShape2D_of2wr")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ContenedorNumeros/Area_27" unique_id=1634022640]
+rotation = 1.8587756
+polygon = PackedVector2Array(-10, -159, -19, -254, 18, -254, 10, -159)
 
-[node name="Area_38" type="Area2D" parent="ContenedorNumeros" unique_id=1809870041 groups=["sensores_ruleta"]]
-rotation = -1.9776165
-metadata/numero_ruleta = "38"
+[node name="Area_28" type="Area2D" parent="ContenedorNumeros" unique_id=135057362 groups=["sensores_ruleta"]]
+metadata/numero_ruleta = "26"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_38" unique_id=1037421628]
-position = Vector2(-249.30278, 42.85039)
-rotation = 1.3912522
-shape = SubResource("RectangleShape2D_of2wr")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ContenedorNumeros/Area_28" unique_id=2022463738]
+rotation = 5.436701
+polygon = PackedVector2Array(-10, -159, -19, -254, 18, -254, 10, -159)
 
-[node name="Area_18" type="Area2D" parent="ContenedorNumeros" unique_id=962304983 groups=["sensores_ruleta"]]
-rotation = -2.230894
-metadata/numero_ruleta = "18"
+[node name="Area_29" type="Area2D" parent="ContenedorNumeros" unique_id=495749591 groups=["sensores_ruleta"]]
+metadata/numero_ruleta = "29"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_18" unique_id=247329446]
-position = Vector2(-263.77698, 44.628563)
-rotation = 1.5481002
-shape = SubResource("RectangleShape2D_of2wr")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ContenedorNumeros/Area_29" unique_id=1694124282]
+rotation = 5.0963616
+polygon = PackedVector2Array(-10, -159, -19, -254, 18, -254, 10, -159)
 
-[node name="Area_18_2" type="Area2D" parent="ContenedorNumeros" unique_id=1919029892 groups=["sensores_ruleta"]]
-rotation = -2.472156
-metadata/numero_ruleta = "18"
+[node name="Area_30" type="Area2D" parent="ContenedorNumeros" unique_id=137209966 groups=["sensores_ruleta"]]
+metadata/numero_ruleta = "29"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_18_2" unique_id=1663907371]
-position = Vector2(-282.91904, 45.35208)
-rotation = 1.5481002
-shape = SubResource("RectangleShape2D_of2wr")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ContenedorNumeros/Area_30" unique_id=1328753544]
+rotation = 2.5481808
+polygon = PackedVector2Array(-10, -159, -19, -254, 18, -254, 10, -159)
 
-[node name="Area_12" type="Area2D" parent="ContenedorNumeros" unique_id=1681114131 groups=["sensores_ruleta"]]
-rotation = -2.65804
-metadata/numero_ruleta = "12"
+[node name="Area_31" type="Area2D" parent="ContenedorNumeros" unique_id=1604516801 groups=["sensores_ruleta"]]
+metadata/numero_ruleta = "29"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_12" unique_id=784267887]
-position = Vector2(-282.91904, 45.35208)
-rotation = 1.5481002
-shape = SubResource("RectangleShape2D_of2wr")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ContenedorNumeros/Area_31" unique_id=439432548]
+rotation = 5.0963616
+polygon = PackedVector2Array(-10, -159, -19, -254, 18, -254, 10, -159)
 
-[node name="Area_8_2" type="Area2D" parent="ContenedorNumeros" unique_id=1111096435 groups=["sensores_ruleta"]]
-rotation = -2.845939
-metadata/numero_ruleta = "8"
+[node name="Area_32" type="Area2D" parent="ContenedorNumeros" unique_id=2036909913 groups=["sensores_ruleta"]]
+metadata/numero_ruleta = "32"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_8_2" unique_id=327681257]
-position = Vector2(-282.91904, 45.35208)
-rotation = 1.5481002
-shape = SubResource("RectangleShape2D_of2wr")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ContenedorNumeros/Area_32" unique_id=1210390097]
+rotation = 0.16929694
+polygon = PackedVector2Array(-10, -159, -19, -254, 18, -254, 10, -159)
 
-[node name="Area_2_2" type="Area2D" parent="ContenedorNumeros" unique_id=121934384 groups=["sensores_ruleta"]]
-rotation = -3.014808
-metadata/numero_ruleta = "2"
+[node name="Area_33" type="Area2D" parent="ContenedorNumeros" unique_id=2139491129 groups=["sensores_ruleta"]]
+metadata/numero_ruleta = "33"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_2_2" unique_id=1232932379]
-position = Vector2(-282.91904, 45.35208)
-rotation = 1.5481002
-shape = SubResource("RectangleShape2D_of2wr")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ContenedorNumeros/Area_33" unique_id=1984265055]
+rotation = 3.7350047
+polygon = PackedVector2Array(-10, -159, -19, -254, 18, -254, 10, -159)
 
-[node name="Area_11" type="Area2D" parent="ContenedorNumeros" unique_id=156438342 groups=["sensores_ruleta"]]
-rotation = -3.1813378
-metadata/numero_ruleta = "11"
+[node name="Area_34" type="Area2D" parent="ContenedorNumeros" unique_id=43779746 groups=["sensores_ruleta"]]
+metadata/numero_ruleta = "36"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_11" unique_id=590013172]
-position = Vector2(-282.91904, 45.35208)
-rotation = 1.5481002
-shape = SubResource("RectangleShape2D_of2wr")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ContenedorNumeros/Area_34" unique_id=339455843]
+rotation = 1.5271631
+scale = Vector2(0.99999994, 0.99999994)
+polygon = PackedVector2Array(-10, -159, -19, -254, 18, -254, 10, -159)
 
-[node name="Area_5_2" type="Area2D" parent="ContenedorNumeros" unique_id=1062313180 groups=["sensores_ruleta"]]
-metadata/numero_ruleta = "5"
+[node name="Area_35" type="Area2D" parent="ContenedorNumeros" unique_id=2007585558 groups=["sensores_ruleta"]]
+metadata/numero_ruleta = "36"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_5_2" unique_id=169817482]
-position = Vector2(269, -166)
-rotation = 0.9194766
-shape = SubResource("RectangleShape2D_f0igt")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ContenedorNumeros/Area_35" unique_id=1595539939]
+rotation = 5.77704
+polygon = PackedVector2Array(-10, -159, -19, -254, 18, -254, 10, -159)
 
-[node name="Area_22" type="Area2D" parent="ContenedorNumeros" unique_id=1265031661 groups=["sensores_ruleta"]]
-metadata/numero_ruleta = "22"
+[node name="Area_36" type="Area2D" parent="ContenedorNumeros" unique_id=866291139 groups=["sensores_ruleta"]]
+metadata/numero_ruleta = "36"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_22" unique_id=365307000]
-position = Vector2(223, -200)
-rotation = 0.76470464
-shape = SubResource("RectangleShape2D_y3kk1")
-
-[node name="Area_14" type="Area2D" parent="ContenedorNumeros" unique_id=924229664 groups=["sensores_ruleta"]]
-metadata/numero_ruleta = "14"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ContenedorNumeros/Area_14" unique_id=1092183343]
-position = Vector2(117.39728, -251.22589)
-rotation = 0.35854948
-shape = SubResource("RectangleShape2D_3u0hf")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="ContenedorNumeros/Area_36" unique_id=721529908]
+rotation = 2.1991148
+polygon = PackedVector2Array(-10, -159, -19, -254, 18, -254, 10, -159)
 
 [node name="Ficha$1" parent="." unique_id=1312362115 instance=ExtResource("4_8vngh")]
 position = Vector2(-521, 6)

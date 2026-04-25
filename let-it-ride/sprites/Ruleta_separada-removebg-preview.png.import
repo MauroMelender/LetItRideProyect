@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://xsewjvkxoey2"
-path="res://.godot/imported/BolaReBonita.png-f0dc008290d7134cde86283059e33a01.ctex"
+uid="uid://bel6qo8xxxfli"
+path="res://.godot/imported/Ruleta_separada-removebg-preview.png-e2bcfb020e5acd9249b318fd72901162.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ref/BolaReBonita.png"
-dest_files=["res://.godot/imported/BolaReBonita.png-f0dc008290d7134cde86283059e33a01.ctex"]
+source_file="res://sprites/Ruleta_separada-removebg-preview.png"
+dest_files=["res://.godot/imported/Ruleta_separada-removebg-preview.png-e2bcfb020e5acd9249b318fd72901162.ctex"]
 
 [params]
 

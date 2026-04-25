@@ -1,13 +1,13 @@
 [gd_scene format=3 uid="uid://ef3v61a68vdg"]
 
 [ext_resource type="Script" uid="uid://dssba28u5pi4t" path="res://menu_principal.gd" id="1_mvexp"]
-[ext_resource type="Texture2D" uid="uid://c8e1xdkb8lg" path="res://Ref/Spr_LetItRide!Logo.png" id="2_kfus4"]
-[ext_resource type="Texture2D" uid="uid://bb0b1mm6r3fh5" path="res://Ref/Spr_ContinueButton.png" id="3_afqr1"]
-[ext_resource type="Texture2D" uid="uid://dqjwul3agqyn4" path="res://Ref/Spr_NewRunButton.png" id="4_p2nfu"]
-[ext_resource type="Texture2D" uid="uid://3hn1pbyeh42q" path="res://Ref/Spr_ConfigButton.png" id="5_jtobk"]
-[ext_resource type="Texture2D" uid="uid://b5cu7igj6548u" path="res://Ref/Spr_CollectionButton.png" id="6_081kg"]
-[ext_resource type="Texture2D" uid="uid://lb78h0injfac" path="res://Ref/Spr_ExitButton.png" id="7_83vd4"]
-[ext_resource type="Texture2D" uid="uid://dnt1ikgv1t0wp" path="res://Ref/FondodeMenu.jpg" id="8_kfus4"]
+[ext_resource type="Texture2D" uid="uid://c8e1xdkb8lg" path="res://sprites/Spr_LetItRide!Logo.png" id="2_kfus4"]
+[ext_resource type="Texture2D" uid="uid://bb0b1mm6r3fh5" path="res://sprites/Spr_ContinueButton.png" id="3_afqr1"]
+[ext_resource type="Texture2D" uid="uid://dqjwul3agqyn4" path="res://sprites/Spr_NewRunButton.png" id="4_p2nfu"]
+[ext_resource type="Texture2D" uid="uid://3hn1pbyeh42q" path="res://sprites/Spr_ConfigButton.png" id="5_jtobk"]
+[ext_resource type="Texture2D" uid="uid://b5cu7igj6548u" path="res://sprites/Spr_CollectionButton.png" id="6_081kg"]
+[ext_resource type="Texture2D" uid="uid://lb78h0injfac" path="res://sprites/Spr_ExitButton.png" id="7_83vd4"]
+[ext_resource type="Texture2D" uid="uid://dnt1ikgv1t0wp" path="res://sprites/FondodeMenu.jpg" id="8_kfus4"]
 
 [sub_resource type="Animation" id="Animation_a6518"]
 length = 0.16666667
@@ -182,8 +182,8 @@ texture = ExtResource("8_kfus4")
 layout_mode = 0
 offset_left = 531.0
 offset_top = -63.0
-offset_right = 1062.114
-offset_bottom = 381.0
+offset_right = 1443.1045
+offset_bottom = 699.5
 scale = Vector2(0.56, 0.56)
 texture = ExtResource("2_kfus4")
 expand_mode = 1
@@ -221,7 +221,7 @@ stretch_mode = 5
 layout_mode = 0
 offset_left = -6.0
 offset_top = -168.0
-offset_right = 252.15799
+offset_right = 252.15796
 offset_bottom = -109.94501
 texture_normal = ExtResource("6_081kg")
 ignore_texture_size = true

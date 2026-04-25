@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b1e1qgonpc7l"
-path="res://.godot/imported/Spr_LetItRideButton_0.png-af68be97cac296248b25c8a9ac00afff.ctex"
+uid="uid://dh48vsi76oib"
+path="res://.godot/imported/Spr_Apuestas.png-f05573b039453c5765181ea0d2933675.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ref/Spr_LetItRideButton_0.png"
-dest_files=["res://.godot/imported/Spr_LetItRideButton_0.png-af68be97cac296248b25c8a9ac00afff.ctex"]
+source_file="res://sprites/Spr_Apuestas.png"
+dest_files=["res://.godot/imported/Spr_Apuestas.png-f05573b039453c5765181ea0d2933675.ctex"]
 
 [params]
 

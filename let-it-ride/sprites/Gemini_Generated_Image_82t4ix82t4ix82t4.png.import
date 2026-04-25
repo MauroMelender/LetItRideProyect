@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://etwqgxf6hpj0"
-path="res://.godot/imported/Spr_Chip_5.png-e3ed1e03d3237fe6cb3ed57dc79a28cb.ctex"
+uid="uid://c8q5nj5fxxn6y"
+path="res://.godot/imported/Gemini_Generated_Image_82t4ix82t4ix82t4.png-6877f10226068b529d74fca8c075d46b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ref/Spr_Chip_5.png"
-dest_files=["res://.godot/imported/Spr_Chip_5.png-e3ed1e03d3237fe6cb3ed57dc79a28cb.ctex"]
+source_file="res://sprites/Gemini_Generated_Image_82t4ix82t4ix82t4.png"
+dest_files=["res://.godot/imported/Gemini_Generated_Image_82t4ix82t4ix82t4.png-6877f10226068b529d74fca8c075d46b.ctex"]
 
 [params]
 

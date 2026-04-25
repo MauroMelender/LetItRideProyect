@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dnt1ikgv1t0wp"
-path="res://.godot/imported/FondodeMenu.jpg-8784091862dcf987a82ce05c0afbd07e.ctex"
+uid="uid://gwa651s718nb"
+path="res://.godot/imported/Spr_Ruleta.png-69e5ecfce26b74b1c88f1c499daa33f1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ref/FondodeMenu.jpg"
-dest_files=["res://.godot/imported/FondodeMenu.jpg-8784091862dcf987a82ce05c0afbd07e.ctex"]
+source_file="res://sprites/Spr_Ruleta.png"
+dest_files=["res://.godot/imported/Spr_Ruleta.png-69e5ecfce26b74b1c88f1c499daa33f1.ctex"]
 
 [params]
 

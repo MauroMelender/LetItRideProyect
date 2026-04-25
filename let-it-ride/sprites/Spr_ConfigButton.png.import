@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b5cu7igj6548u"
-path="res://.godot/imported/Spr_CollectionButton.png-8cd9508559d327d51ebe8f95b5ba0715.ctex"
+uid="uid://3hn1pbyeh42q"
+path="res://.godot/imported/Spr_ConfigButton.png-26200c2df5909750b932ae7102385489.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ref/Spr_CollectionButton.png"
-dest_files=["res://.godot/imported/Spr_CollectionButton.png-8cd9508559d327d51ebe8f95b5ba0715.ctex"]
+source_file="res://sprites/Spr_ConfigButton.png"
+dest_files=["res://.godot/imported/Spr_ConfigButton.png-26200c2df5909750b932ae7102385489.ctex"]
 
 [params]
 

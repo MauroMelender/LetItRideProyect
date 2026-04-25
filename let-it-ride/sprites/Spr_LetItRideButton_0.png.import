@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://brvlwcb8bjp43"
-path="res://.godot/imported/Spr_LetItRide!LogoTitle.png-89232c9a0499219d05fc42a78ee3c998.ctex"
+uid="uid://b1e1qgonpc7l"
+path="res://.godot/imported/Spr_LetItRideButton_0.png-33ebaaf49385cccf355b6bdce4106173.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ref/Spr_LetItRide!LogoTitle.png"
-dest_files=["res://.godot/imported/Spr_LetItRide!LogoTitle.png-89232c9a0499219d05fc42a78ee3c998.ctex"]
+source_file="res://sprites/Spr_LetItRideButton_0.png"
+dest_files=["res://.godot/imported/Spr_LetItRideButton_0.png-33ebaaf49385cccf355b6bdce4106173.ctex"]
 
 [params]
 

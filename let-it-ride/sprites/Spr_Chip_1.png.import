@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3hn1pbyeh42q"
-path="res://.godot/imported/Spr_ConfigButton.png-45a267d0b367cd4aad4d14da5d3752bc.ctex"
+uid="uid://b6dyium60gyoy"
+path="res://.godot/imported/Spr_Chip_1.png-9c78d328b72496079af915affd0f90b8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ref/Spr_ConfigButton.png"
-dest_files=["res://.godot/imported/Spr_ConfigButton.png-45a267d0b367cd4aad4d14da5d3752bc.ctex"]
+source_file="res://sprites/Spr_Chip_1.png"
+dest_files=["res://.godot/imported/Spr_Chip_1.png-9c78d328b72496079af915affd0f90b8.ctex"]
 
 [params]
 

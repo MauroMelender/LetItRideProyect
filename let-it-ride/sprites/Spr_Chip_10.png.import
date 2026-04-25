@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://yvccawrjdd2v"
-path="res://.godot/imported/Introfondo.jpg-dd7df898b8b7878c64145c35a939befd.ctex"
+uid="uid://djwyr2gsd671r"
+path="res://.godot/imported/Spr_Chip_10.png-94fa4ba9ce66e6c70e9f34d297c21923.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ref/Introfondo.jpg"
-dest_files=["res://.godot/imported/Introfondo.jpg-dd7df898b8b7878c64145c35a939befd.ctex"]
+source_file="res://sprites/Spr_Chip_10.png"
+dest_files=["res://.godot/imported/Spr_Chip_10.png-94fa4ba9ce66e6c70e9f34d297c21923.ctex"]
 
 [params]
 

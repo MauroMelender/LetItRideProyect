@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://xxa85dxv25nw"
-path="res://.godot/imported/Gemini_Generated_Image_umbu9qumbu9qumbu.png-099fa7043dcb46c9225b1a37847b955d.ctex"
+uid="uid://dqjwul3agqyn4"
+path="res://.godot/imported/Spr_NewRunButton.png-fc9e626faea2b53e8f81f273fcb35936.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ref/Gemini_Generated_Image_umbu9qumbu9qumbu.png"
-dest_files=["res://.godot/imported/Gemini_Generated_Image_umbu9qumbu9qumbu.png-099fa7043dcb46c9225b1a37847b955d.ctex"]
+source_file="res://sprites/Spr_NewRunButton.png"
+dest_files=["res://.godot/imported/Spr_NewRunButton.png-fc9e626faea2b53e8f81f273fcb35936.ctex"]
 
 [params]
 

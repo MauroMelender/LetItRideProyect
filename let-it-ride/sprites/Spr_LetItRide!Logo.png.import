@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8q5nj5fxxn6y"
-path="res://.godot/imported/Gemini_Generated_Image_82t4ix82t4ix82t4.png-5dad9e1693baea5991799485fa1a78f8.ctex"
+uid="uid://c8e1xdkb8lg"
+path="res://.godot/imported/Spr_LetItRide!Logo.png-4127e667c9f99c1fbb52ebd6ee08f7d9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ref/Gemini_Generated_Image_82t4ix82t4ix82t4.png"
-dest_files=["res://.godot/imported/Gemini_Generated_Image_82t4ix82t4ix82t4.png-5dad9e1693baea5991799485fa1a78f8.ctex"]
+source_file="res://sprites/Spr_LetItRide!Logo.png"
+dest_files=["res://.godot/imported/Spr_LetItRide!Logo.png-4127e667c9f99c1fbb52ebd6ee08f7d9.ctex"]
 
 [params]
 

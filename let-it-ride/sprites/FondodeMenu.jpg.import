@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djwyr2gsd671r"
-path="res://.godot/imported/Spr_Chip_10.png-592af04350caa9aa2a4d78591763b0e4.ctex"
+uid="uid://dnt1ikgv1t0wp"
+path="res://.godot/imported/FondodeMenu.jpg-26d8193c75526103a7aba81cbfeff03a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ref/Spr_Chip_10.png"
-dest_files=["res://.godot/imported/Spr_Chip_10.png-592af04350caa9aa2a4d78591763b0e4.ctex"]
+source_file="res://sprites/FondodeMenu.jpg"
+dest_files=["res://.godot/imported/FondodeMenu.jpg-26d8193c75526103a7aba81cbfeff03a.ctex"]
 
 [params]
 

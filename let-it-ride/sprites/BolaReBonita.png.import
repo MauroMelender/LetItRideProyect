@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dh48vsi76oib"
-path="res://.godot/imported/Spr_Apuestas.png-597ac1825a96711f2ea7397333c0eb6a.ctex"
+uid="uid://xsewjvkxoey2"
+path="res://.godot/imported/BolaReBonita.png-01422c8aaa9319339177b89243f61748.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ref/Spr_Apuestas.png"
-dest_files=["res://.godot/imported/Spr_Apuestas.png-597ac1825a96711f2ea7397333c0eb6a.ctex"]
+source_file="res://sprites/BolaReBonita.png"
+dest_files=["res://.godot/imported/BolaReBonita.png-01422c8aaa9319339177b89243f61748.ctex"]
 
 [params]
 

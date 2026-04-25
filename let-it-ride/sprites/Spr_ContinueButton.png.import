@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqjwul3agqyn4"
-path="res://.godot/imported/Spr_NewRunButton.png-0ba9bc3f6d7f2ad9d196a589e1bca3e8.ctex"
+uid="uid://bb0b1mm6r3fh5"
+path="res://.godot/imported/Spr_ContinueButton.png-173615cd9881f7e6d5c07b61ea900412.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Ref/Spr_NewRunButton.png"
-dest_files=["res://.godot/imported/Spr_NewRunButton.png-0ba9bc3f6d7f2ad9d196a589e1bca3e8.ctex"]
+source_file="res://sprites/Spr_ContinueButton.png"
+dest_files=["res://.godot/imported/Spr_ContinueButton.png-173615cd9881f7e6d5c07b61ea900412.ctex"]
 
 [params]
 
