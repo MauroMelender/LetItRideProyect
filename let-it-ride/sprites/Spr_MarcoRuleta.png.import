@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bel6qo8xxxfli"
-path="res://.godot/imported/Ruleta_separada-removebg-preview.png-e2bcfb020e5acd9249b318fd72901162.ctex"
+uid="uid://bd6p1dddvxqni"
+path="res://.godot/imported/Spr_MarcoRuleta.png-4227450be8ae27b350c14403c1b13613.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Ruleta_separada-removebg-preview.png"
-dest_files=["res://.godot/imported/Ruleta_separada-removebg-preview.png-e2bcfb020e5acd9249b318fd72901162.ctex"]
+source_file="res://sprites/Spr_MarcoRuleta.png"
+dest_files=["res://.godot/imported/Spr_MarcoRuleta.png-4227450be8ae27b350c14403c1b13613.ctex"]
 
 [params]
 
