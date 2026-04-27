@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://gwa651s718nb"
-path="res://.godot/imported/Spr_Ruleta.png-69e5ecfce26b74b1c88f1c499daa33f1.ctex"
+uid="uid://pol1vkeoghff"
+path="res://.godot/imported/Spr_Fichas.png-ebec64d0b23ff05d2078bd18568e4e39.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Spr_Ruleta.png"
-dest_files=["res://.godot/imported/Spr_Ruleta.png-69e5ecfce26b74b1c88f1c499daa33f1.ctex"]
+source_file="res://Proyects/Let It Ride/LetItRideProyect/let-it-ride/sprites/Spr_Fichas.png"
+dest_files=["res://.godot/imported/Spr_Fichas.png-ebec64d0b23ff05d2078bd18568e4e39.ctex"]
 
 [params]
 

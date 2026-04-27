@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://u65ad18lwdsm"
-path="res://.godot/imported/Ruleta 01.png-349ea5f14a68e07c1de5dbf2fedac31f.ctex"
+uid="uid://5nlp1abp728l"
+path="res://.godot/imported/SprSheet_Numeros.png-d662cc1eb7da1e63bde43e995018bf7f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Ruleta 01.png"
-dest_files=["res://.godot/imported/Ruleta 01.png-349ea5f14a68e07c1de5dbf2fedac31f.ctex"]
+source_file="res://sprites/SprSheet_Numeros.png"
+dest_files=["res://.godot/imported/SprSheet_Numeros.png-d662cc1eb7da1e63bde43e995018bf7f.ctex"]
 
 [params]
 
